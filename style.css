@@ -18,16 +18,9 @@ h1{
 
 section{
     width: 50vw;
-    border: solid 3px black;
+    /* border: solid 3px black; */
     margin-left: 25vw;
     margin-top: 40px;
-}
-
-@media screen and (max-width: 480px){
-    section{
-        width: 100vw;
-        border: solid 3px red;
-    }
 }
 
 article{
@@ -64,15 +57,23 @@ h3{
 }
 
 #list li{
-    border: 3px solid pink;
+    border: 5px solid cyan;
     font-family: 'Times New Roman', Times, serif;
     margin: 5px;
     font-weight: bold;
     font-size: large;
     padding: 5px;
     border-radius: 5px;
+    color: white;
 }
 
+#list li button{
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    transform: scale(1.2);
+    cursor: pointer;
+}
 
 
 
