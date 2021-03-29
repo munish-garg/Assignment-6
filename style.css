@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -20,7 +20,7 @@ section{
     width: 50vw;
     /* border: solid 3px black; */
     margin-left: 25vw;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .container{
@@ -42,4 +42,10 @@ section{
     transform: scale(1.8);
     border-radius: 3px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    text-align: center;
+    margin: 25px;
+    font-family: 'Kiwi Maru', serif;
 }
