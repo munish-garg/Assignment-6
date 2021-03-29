@@ -42,12 +42,14 @@ article{
     transform: scale(1.8);
     border-radius: 3px;
     font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
 
 h3{
     text-align: center;
     margin: 25px;
     font-family: 'Kiwi Maru', serif;
+    color: yellow;
 }
 
 #list{
@@ -60,9 +62,22 @@ h3{
     margin: 5px;
     font-weight: bold;
     font-size: large;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #list li button{
-    display: inline-block;
-    margin-right: 0px;
+    transform: scale(1.5);
+    padding: 0.5px;
+    cursor: pointer;
 }
+
+#list li button:nth-of-type(1){
+    /* transform: scale(1.2); */
+    margin-left: 75%;
+}
+
+#list li button:nth-of-type(2){
+    margin-left: 20px;
+}
+

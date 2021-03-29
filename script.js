@@ -19,6 +19,14 @@ function addEvent(){
         btn1.addEventListener('click',(e)=>{
             e.target.parentElement.remove();
         })
+        btn2.addEventListener('click',(e)=>{
+           let x = prompt("Enter the new task.");
+           if(x!==''){
+            e.target.parentElement.innerText = x;
+            ele.append(btn1);
+            ele.append(btn2);
+           }
+        })
         list.append(ele);
         input.value = '';
     }
@@ -30,14 +38,22 @@ function keyPressed(e){
         let ele = document.createElement('li');
         ele.innerText = input.value;
         let btn1 = document.createElement('button');
-        btn1.innerText = "Delete"
+        btn1.innerText = "Delete";
         let btn2 = document.createElement('button');
+        btn2.innerText = "Edit";
         ele.append(btn1);
         ele.append(btn2);
         btn1.addEventListener('click',(e)=>{
             e.target.parentElement.remove();
         })
-        btn2.innerText = "Edit"
+        btn2.addEventListener('click',(e)=>{
+            let x = prompt('Enter the new task.');
+            if(x!==''){
+                e.target.parentElement.innerText = x;
+                ele.append(btn1);
+                ele.append(btn2);
+            }
+        })
         list.append(ele);
         input.value = '';
 
