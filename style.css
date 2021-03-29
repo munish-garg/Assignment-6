@@ -23,7 +23,7 @@ section{
     margin-top: 40px;
 }
 
-.container{
+article{
     width: 100%;
     height: 100%;
 }
@@ -58,5 +58,11 @@ h3{
     border: 3px solid pink;
     font-family: 'Times New Roman', Times, serif;
     margin: 5px;
-    
+    font-weight: bold;
+    font-size: large;
+}
+
+#list li button{
+    display: inline-block;
+    margin-right: 0px;
 }

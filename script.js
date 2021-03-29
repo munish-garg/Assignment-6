@@ -10,6 +10,15 @@ function addEvent(){
     if(text !== ''){
         let ele = document.createElement('li');
         ele.innerText = text;
+        let btn1 = document.createElement('button');
+        btn1.innerText = "Delete";
+        let btn2 = document.createElement('button');
+        btn2.innerText = "Edit";
+        ele.append(btn1);
+        ele.append(btn2);
+        btn1.addEventListener('click',(e)=>{
+            e.target.parentElement.remove();
+        })
         list.append(ele);
         input.value = '';
     }
@@ -20,6 +29,15 @@ function keyPressed(e){
         //It means we have to add that event to the list...
         let ele = document.createElement('li');
         ele.innerText = input.value;
+        let btn1 = document.createElement('button');
+        btn1.innerText = "Delete"
+        let btn2 = document.createElement('button');
+        ele.append(btn1);
+        ele.append(btn2);
+        btn1.addEventListener('click',(e)=>{
+            e.target.parentElement.remove();
+        })
+        btn2.innerText = "Edit"
         list.append(ele);
         input.value = '';
 
